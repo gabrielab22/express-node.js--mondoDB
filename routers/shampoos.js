@@ -37,6 +37,32 @@ router.get('/:id', getShampoo, (req, res) => {
 //     }
 // })
 
+// // Updating One
+// router.patch('/:id', getShampoo, async (req, res) => {
+//     if (req.body.name != null) {
+//         res.shampoo.name = req.body.name
+//     }
+//     if (req.body.name != null) {
+//         res.shampoo.name = req.body.name
+//     }
+//     try {
+//         const updatedShampoo = await res.shampoo.save()
+//         res.json(updatedShampoo)
+//     } catch (err) {
+//         res.status(400).json({ message: err.message })
+//     }
+// })
+
+// // Deleting One
+// router.delete('/:id', getShampoo, async (req, res) => {
+//     try {
+//         await res.shampoo.remove()
+//         res.json({ message: "Deleted Shampoo" })
+//     } catch (err) {
+//         res.status(500).json({ message: err.message })
+//     }
+// })
+
 
 async function getShampoo(req, res, next) {
 

@@ -37,6 +37,37 @@ router.get('/:id', getManufacturer, (req, res) => {
 //     }
 // })
 
+// Updating One
+// router.patch('/:id', getManufacturer, async (req, res) => {
+//     if (req.body.name != null) {
+//         res.manufacturer.name = req.body.name
+//     }
+//     if (req.body.name != null) {
+//         res.manufacturer.name = req.body.name
+//     }
+//     try {
+//         const updatedManufacturer = await res.manufacturer.save()
+//         res.json(updatedManufacturer)
+//     } catch (err) {
+//         res.status(400).json({ message: err.message })
+//     }
+// })
+
+// Deleting One
+// router.delete('/:id', getManufacturer, async (req, res) => {
+//     try {
+//         if (req.body.shampoo.name == req.body.manufacturer.name) {
+//             await res.shampoo.remove()
+//             res.json({ message: "Deleted Manufacturer" })
+//         } else {
+//             res.json({ message: "Can't delete because manufacturer have artikl!!" })
+//         }
+
+//     } catch (err) {
+//         res.status(500).json({ message: err.message })
+//     }
+// })
+
 
 async function getManufacturer(req, res, next) {
 
